@@ -1,4 +1,6 @@
 SpicyData::Application.routes.draw do
+  resources :results
+
   resources :contaminationstatuses
 
   resources :references

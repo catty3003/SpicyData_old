@@ -7,12 +7,5 @@ class Contaminationstatus < ActiveRecord::Base
 	belongs_to :samplepreparation
 	belongs_to :treatment
 	belongs_to :spiking
+	belongs_to :result
 end
-	has_and_belongs_to_many :agents
-	has_many :matrices
-	has_many :treatments
-	has_many :spikings
-	has_many :samplepreparations
-	has_many :detections
-	has_many :tenacities
-	has_many :contaminationstatuses

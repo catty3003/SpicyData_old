@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140614131504) do
+ActiveRecord::Schema.define(version: 20140614164143) do
 
   create_table "agentparams", force: true do |t|
     t.float    "infectious_dose"
@@ -57,7 +57,10 @@ ActiveRecord::Schema.define(version: 20140614131504) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "result_id"
   end
+
+  add_index "contaminationstatuses", ["result_id"], name: "index_contaminationstatuses_on_result_id"
 
   create_table "culdetecs", force: true do |t|
     t.string   "medium"
@@ -149,6 +152,17 @@ ActiveRecord::Schema.define(version: 20140614131504) do
     t.string   "tenacity"
     t.text     "r_comment"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "results", force: true do |t|
+    t.integer  "cfu_initial"
+    t.string   "cfu_initial_unit"
+    t.boolean  "detectability"
+    t.integer  "cfu_detected"
+    t.string   "cfu_detected_unit"
+    t.text     "r_comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
