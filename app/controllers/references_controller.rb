@@ -61,6 +61,27 @@ class ReferencesController < ApplicationController
     end
   end
 
+  def home
+  end 
+
+  def insertdata
+  end
+
+  def showdata
+  end
+
+  def editdata
+  end
+
+  def informations
+  end
+
+  def discussions
+  end
+
+  def help
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_reference

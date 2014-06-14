@@ -4,6 +4,13 @@ SpicyData::Application.routes.draw do
   resources :contaminationstatuses
 
   resources :references
+  get "references/home"
+  get "references/insertdata"
+  get "references/showdata"
+  get "references/editdata"
+  get "references/informations"
+  get "references/discussions"
+  get "references/help"
 
   resources :culdetecs
 
@@ -31,7 +38,7 @@ SpicyData::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'references#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
