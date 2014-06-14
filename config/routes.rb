@@ -3,7 +3,6 @@ SpicyData::Application.routes.draw do
 
   resources :contaminationstatuses
 
-  resources :references
   get "references/home"
   get "references/insertdata"
   get "references/showdata"
@@ -11,6 +10,7 @@ SpicyData::Application.routes.draw do
   get "references/informations"
   get "references/discussions"
   get "references/help"
+  resources :references
 
   resources :culdetecs
 
