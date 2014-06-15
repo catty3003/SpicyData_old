@@ -1,5 +1,43 @@
 <div class="bs-example table-responsive">
   <table class="table table-striped table-bordered table-hover ">
+  	<thead>
+	    <tr>
+	      <th>Spik short name</th>
+	      <th>Spik long name</th>
+	      <th>Spik process description</th>
+	      <th>Spik device needed</th>
+	      <th>Pros</th>
+	      <th>Cons</th>
+	      <th>Reference</th>
+	      <th>User</th>
+	      <th></th>
+	      <th></th>
+	      <th></th>
+	    </tr>
+	  </thead>
+
+	  <tbody>
+	    <% @spikings.each do |spiking| %>
+	      <tr>
+	        <td><%= spiking.spik_short_name %></td>
+	        <td><%= spiking.spik_long_name %></td>
+	        <td><%= spiking.spik_process_description %></td>
+	        <td><%= spiking.spik_device_needed %></td>
+	        <td><%= spiking.pros %></td>
+	        <td><%= spiking.cons %></td>
+	        <td><%= spiking.reference_id %></td>
+	        <td><%= spiking.user_id %></td>
+	        <td><%= link_to 'Show', spiking %></td>
+	        <td><%= link_to 'Edit', edit_spiking_path(spiking) %></td>
+	        <td><%= link_to 'Destroy', spiking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+
+	<br>
+
+	<%= link_to 'New Spiking', new_spiking_path %>	
   
 
 </div>

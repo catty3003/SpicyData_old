@@ -6,6 +6,17 @@ SpicyData::Application.routes.draw do
   get "home/informations"
   get "home/discussions"
   get "home/help"
+  get "home/agentinfo"
+  get "home/matrixinfo"
+  get "home/methodinfo"
+  get "home/treatinfo"
+  get "home/general_functions"
+  get "home/how_insertions"
+  get "home/how_search"
+  get "home/what_info"
+  get "home/join_discuss"
+  get "home/change_profile"
+
   resources :results
 
   resources :contaminationstatuses

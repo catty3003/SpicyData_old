@@ -19,4 +19,45 @@ class HomeController < ApplicationController
 
   def help
   end
+
+  def agentinfo
+    
+  end
+
+  def matrixinfo
+    
+  end
+
+  def methodinfo
+    
+  end
+
+  def treatinfo
+    
+  end
+
+  def general_functions
+    
+  end
+
+  def how_insertions
+    
+  end
+
+  def how_search
+    
+  end
+
+  def what_info
+    
+  end
+
+  def join_discuss
+    
+  end
+
+  def change_profile
+    
+  end
+
 end

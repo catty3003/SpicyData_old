@@ -4,7 +4,9 @@
 
 
       <div class="page-header">          
-        <h1>New Agent</h1>
+        <h1>
+          Agent <%= @agent.a_genus %> <%= @agent.a_species %>
+        </h1>
       </div>
 
       <div class="col-md-3" id="leftCol">
@@ -18,6 +20,7 @@
         <div class="well">          
           <div class="panel panel-info">
             <div class="panel-body"> 
+
               <p>              
                 <strong>A common name:</strong>
                 <%= @agent.a_common_name %>
@@ -98,16 +101,18 @@
                 <%= @agent.user_id %>
               </p>
 
-              <%= link_to 'Edit', edit_agent_path(@agent) %> |
-              <%= link_to 'Back', agents_path %>
-          </div>
-        </div>       
-      </div>
 
+            </div>
+          </div>    
+          <%= link_to 'Edit', edit_agent_path(@agent) %> |
+          <%= link_to 'Back', agents_path %>   
+        </div>
+      </div>
 
     </div>     
   </div>
 </div>
+
 
 
 
