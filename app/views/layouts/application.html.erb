@@ -11,12 +11,13 @@
   <%= csrf_meta_tags %>
 
     <!--custom CSS -->
-      
-   <!-- <link href="http://bootswatch.com/amelia/bootstrap.css" rel="stylesheet"> -->
-    <%= stylesheet_link_tag 'references.css' %>  
+  <%= stylesheet_link_tag 'home.css' %>    
+  <link href="http://bootswatch.com/amelia/bootstrap.css" rel="stylesheet"> 
+   
 </head>
 
 <body>
+  <div id="wrap">
   <div class="container">
     <%= render 'layouts/navigation' %>
   </div> 
@@ -25,14 +26,17 @@
     <%= render 'layouts/messages' %>
     <%= yield %>  
   </div>  
+</div>
 
-  <footer >
+
+  <div id="footer" >
     <div class="row">
       <div class="col-md-12">
         <p id="f_id">Copyright &copy; Mai Dinh Thanh</p>
       </div>
     </div>
-  </footer>
+  </div>
+
 
 </body>
 </html>
