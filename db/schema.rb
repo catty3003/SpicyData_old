@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140614164143) do
+ActiveRecord::Schema.define(version: 20140615173652) do
 
   create_table "agentparams", force: true do |t|
     t.float    "infectious_dose"
@@ -39,6 +39,13 @@ ActiveRecord::Schema.define(version: 20140614164143) do
     t.text     "a_comment"
     t.integer  "reference_id"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "agents_references", id: false, force: true do |t|
+    t.integer  "agent_id"
+    t.integer  "reference_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

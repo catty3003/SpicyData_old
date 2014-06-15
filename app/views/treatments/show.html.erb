@@ -1,4 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="bs-docs-section">
+  <div class="row">
+    <div class="col-md-12">
+
+
+      <div class="page-header">          
+        <h1>New Agent</h1>
+      </div>
+
+      <div class="col-md-3" id="leftCol">
+        <div class="well">    
+          <h3>Single</h3>   
+          <%= render 'layouts/sidebar_show' %>
+        </div>
+      </div>     
+
+      <div class="col-md-9" id="rightCol"> 
+        <div class="well">          
+          <div class="panel panel-info">
+            <div class="panel-body"> 
 
 <p>
   <strong>Temperature:</strong>
@@ -107,3 +126,15 @@
 
 <%= link_to 'Edit', edit_treatment_path(@treatment) %> |
 <%= link_to 'Back', treatments_path %>
+
+          </div>
+        </div>       
+      </div>
+
+
+    </div>     
+  </div>
+</div>
+
+
+
