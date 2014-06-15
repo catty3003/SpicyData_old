@@ -119,19 +119,38 @@ padding: 0px;
 
 
 a {
-  color: #e8d069;
+  color: #FFFFFF;
   text-decoration: none;
 }
+
 a:hover,
 a:focus, 
 a:visited {
-  color: #e8d069;
+  color: #FFFFFF;
 }
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
   }
+
+
+
+/* uebung 5 */
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.jumbotron .a {
+  color:white;
+}
+
 
 
 
@@ -434,7 +453,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #e8d069;
+  color: #6600FF;
   text-decoration: underline;
 }
 a:focus {
