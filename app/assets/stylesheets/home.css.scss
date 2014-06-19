@@ -206,6 +206,7 @@ template {
 }
 a {
   background: transparent;
+  color: #FFFFFF;
 }
 a:active,
 a:hover {
@@ -356,6 +357,7 @@ th {
   a,
   a:visited {
     text-decoration: underline;
+    color: #FFFFFF;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -448,7 +450,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #e8d069;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover,
