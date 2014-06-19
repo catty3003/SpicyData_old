@@ -27,7 +27,7 @@
 	  <tbody>
 	    <% @agents.each do |agent| %>
 	      <tr>
-	        <td><%= agent.a_common_name %></td>
+	        <td width="30%"><h4><%= link_to agent.a_common_name, agent_path(agent) %></h4></td>
 	        <td><%= agent.a_family %></td>
 	        <td><%= agent.a_genus %></td>
 	        <td><%= agent.a_species %></td>
@@ -43,9 +43,9 @@
 	        <td><%= agent.a_comment %></td>
 	        <td><%= agent.reference_id %></td>
 	        <td><%= agent.user_id %></td>
-	        <td><%= link_to 'Show', agent %></td>
-	        <td><%= link_to 'Edit', edit_agent_path(agent) %></td>
-	        <td><%= link_to 'Destroy', agent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	        <td><%= link_to 'Show', agent, class: "btn btn-info btn-sm" %></td>
+	        <td><%= link_to 'Edit', edit_agent_path(agent), class: "btn btn-warning btn-sm" %></td>
+	        <td><%= link_to 'Destroy', agent, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	      </tr>
 	    <% end %>
 	  </tbody>
@@ -53,6 +53,6 @@
 
 	<br>
 
-	<%= link_to 'New Agent', new_agent_path %>
+	<%= link_to 'New Agent', new_agent_path, class: "btn btn-success btn-sm" %>
 
 </div>

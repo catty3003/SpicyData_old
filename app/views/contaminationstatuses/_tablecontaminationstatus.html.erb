@@ -35,15 +35,13 @@
           <td><%= contaminationstatus.reference_id %></td>
           <td><%= contaminationstatus.user_id %></td>
           <td><%= link_to 'Show', contaminationstatus %></td>
-          <td><%= link_to 'Edit', edit_contaminationstatus_path(contaminationstatus) %></td>
-          <td><%= link_to 'Destroy', contaminationstatus, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
+          <td><%= link_to 'Edit', edit_contaminationstatus_path(contaminationstatus) %></td>          
       <% end %>
     </tbody>
   </table>
 
   <br>
 
-  <%= link_to 'New Contaminationstatus', new_contaminationstatus_path %>
+  <%= link_to 'New Contaminationstatus', new_contaminationstatus_path, class: "btn btn-success btn-sm" %>
 
 </div>

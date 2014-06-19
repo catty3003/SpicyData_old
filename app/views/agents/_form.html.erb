@@ -84,7 +84,8 @@
     </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save Agent', class: "btn btn-success" %> | | 
+    <%= link_to 'Cancel', agents_path, class: "btn btn-danger" %>
   </div>
   <% end %>
 </div>

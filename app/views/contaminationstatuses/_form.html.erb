@@ -68,7 +68,8 @@
     </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save', class: "btn btn-success" %> | | 
+    <%= link_to 'Cancel', contaminationstatuses_path, class: "btn btn-danger" %>
   </div>
   <% end %>
 </div>

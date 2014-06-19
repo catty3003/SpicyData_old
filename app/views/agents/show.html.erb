@@ -103,17 +103,17 @@
 
 
             </div>
+
           </div>    
-          <%= link_to 'Edit', edit_agent_path(@agent) %> |
-          <%= link_to 'Back', agents_path %>   
+          <%= link_to 'Edit Agent', edit_agent_path(@agent), class: "btn btn-warning btn-sm" %> |  | 
+          <%= link_to 'Delete', @agent, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> | 
+          <%= link_to 'Back to all Agents', agents_path, class: "btn btn-info btn-sm" %>   
         </div>
       </div>
 
     </div>     
   </div>
 </div>
-
-
 
 
 
