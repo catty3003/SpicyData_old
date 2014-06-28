@@ -1,4 +1,4 @@
-<div class="bs-example table-responsive">
+<div class="table-responsive">
   <table class="table table-striped table-bordered table-hover ">
     
       <thead>
@@ -26,14 +26,13 @@
           <th>Matrix</th>
           <th></th>
           <th></th>
-          <th></th>
         </tr>
       </thead>
 
       <tbody>
         <% @treatments.each do |treatment| %>
           <tr>
-            <td><%= treatment.temperature %></td>
+            <td width="30%"><h4><%= link_to treatment.temperature, treatment_path(treatment) %></h4></td>
             <td><%= treatment.temperature_in_degree %></td>
             <td><%= treatment.steam %></td>
             <td><%= treatment.steam_in_percent %></td>

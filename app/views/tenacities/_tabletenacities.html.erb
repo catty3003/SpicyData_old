@@ -1,4 +1,4 @@
-<div class="bs-example table-responsive">
+<div class="table-responsive">
   <table class="table table-striped table-bordered table-hover ">
   	<thead>
 	    <tr>
@@ -9,14 +9,13 @@
 	      <th>User</th>
 	      <th></th>
 	      <th></th>
-	      <th></th>
 	    </tr>
 	  </thead>
 
 	  <tbody>
 	    <% @tenacities.each do |tenacity| %>
 	      <tr>
-	        <td><%= tenacity.total_sample_number %></td>
+	        <td width="30%"><h4><%= link_to tenacity.total_sample_number, tenacity_path(tenacity) %></h4></td>
 	        <td><%= tenacity.inoculum_concentration_initial %></td>
 	        <td><%= tenacity.i_concentration_unit %></td>
 	        <td><%= tenacity.reference_id %></td>

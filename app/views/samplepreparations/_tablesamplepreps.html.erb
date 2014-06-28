@@ -1,4 +1,4 @@
-<div class="bs-example table-responsive">
+<div class="table-responsive">
   <table class="table table-striped table-bordered table-hover ">
   	<thead>
 	    <tr>
@@ -27,14 +27,13 @@
 	      <th>User</th>
 	      <th></th>
 	      <th></th>
-	      <th></th>
 	    </tr>
 	  </thead>
 
 	  <tbody>
 	    <% @samplepreparations.each do |samplepreparation| %>
 	      <tr>
-	        <td><%= samplepreparation.samprep_short_name %></td>
+	        <td width="30%"><h4><%= link_to samplepreparation.samprep_short_name, samplepreparation_path(samplepreparation) %></h4></td>
 	        <td><%= samplepreparation.samprep_long_name %></td>
 	        <td><%= samplepreparation.samprep_method_validated_for_condiments %></td>
 	        <td><%= samplepreparation.samprep_process_description %></td>

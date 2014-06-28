@@ -1,4 +1,4 @@
-<div class="bs-example table-responsive">
+<div class="table-responsive">
   <table class="table table-striped table-bordered table-hover ">
   	<thead>
       <tr>
@@ -15,14 +15,13 @@
         <th>User</th>
         <th></th>
         <th></th>
-        <th></th>
       </tr>
     </thead>
 
     <tbody>
       <% @contaminationstatuses.each do |contaminationstatus| %>
         <tr>
-          <td><%= contaminationstatus.cfu_natural_contamination %></td>
+          <td width="30%"><h4><%= link_to contaminationstatus.cfu_natural_contamination, contaminationstatus_path(contaminationstatus) %></h4></td>
           <td><%= contaminationstatus.cfu_natural_contamination_unit %></td>
           <td><%= contaminationstatus.matrix_id %></td>
           <td><%= contaminationstatus.agent_id %></td>
