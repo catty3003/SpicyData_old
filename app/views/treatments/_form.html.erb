@@ -104,7 +104,8 @@
     </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save Treatment', class: "btn btn-success" %> | | 
+    <%= link_to 'Cancel', treatments_path, class: "btn btn-danger" %>
   </div>
   <% end %>
 </div>

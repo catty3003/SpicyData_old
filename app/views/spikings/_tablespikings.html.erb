@@ -27,9 +27,8 @@
 	        <td><%= spiking.cons %></td>
 	        <td><%= spiking.reference_id %></td>
 	        <td><%= spiking.user_id %></td>
-	        <td><%= link_to 'Show', spiking %></td>
-	        <td><%= link_to 'Edit', edit_spiking_path(spiking) %></td>
-	        <td><%= link_to 'Destroy', spiking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	        <td><%= link_to 'Show', spiking, class: "btn btn-info btn-sm" %></td>
+	        <td><%= link_to 'Edit', edit_spiking_path(spiking), class: "btn btn-warning btn-sm" %></td>
 	      </tr>
 	    <% end %>
 	  </tbody>
@@ -37,7 +36,7 @@
 
 	<br>
 
-	<%= link_to 'New Spiking', new_spiking_path %>	
+	<%= link_to 'New Spiking', new_spiking_path, class: "btn btn-success btn-sm"  %>	
   
 
 </div>

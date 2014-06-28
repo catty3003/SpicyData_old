@@ -11,7 +11,6 @@
 
       <div class="col-md-3" id="leftCol">
         <div class="well">    
-          <h3>Single</h3>   
           <%= render 'layouts/sidebar_show' %>
         </div>
       </div>     
@@ -117,8 +116,9 @@
 
             </div>
           </div>    
-          <%= link_to 'Edit', edit_reference_path(@reference) %> |
-          <%= link_to 'Back', references_path %>  
+          <%= link_to 'Edit Reference', edit_reference_path(@reference) , class: "btn btn-warning btn-sm" %> |  | 
+          <%= link_to 'Delete', @reference, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> | 
+          <%= link_to 'Back to all References', references_path, class: "btn btn-info btn-sm" %>
         </div>
       </div>
 

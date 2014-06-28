@@ -21,9 +21,8 @@
 	        <td><%= tenacity.i_concentration_unit %></td>
 	        <td><%= tenacity.reference_id %></td>
 	        <td><%= tenacity.user_id %></td>
-	        <td><%= link_to 'Show', tenacity %></td>
-	        <td><%= link_to 'Edit', edit_tenacity_path(tenacity) %></td>
-	        <td><%= link_to 'Destroy', tenacity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	        <td><%= link_to 'Show', tenacity, class: "btn btn-info btn-sm" %></td>
+	        <td><%= link_to 'Edit', edit_tenacity_path(tenacity), class: "btn btn-warning btn-sm" %></td>
 	      </tr>
 	    <% end %>
 	  </tbody>
@@ -31,7 +30,7 @@
 
 	<br>
 
-	<%= link_to 'New Tenacity', new_tenacity_path %>
+	<%= link_to 'New Tenacity', new_tenacity_path, class: "btn btn-success btn-sm"  %>
   
 
 </div>

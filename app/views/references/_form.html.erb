@@ -92,7 +92,8 @@
     </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save Reference', class: "btn btn-success" %> | | 
+    <%= link_to 'Cancel', references_path, class: "btn btn-danger" %>
   </div>
   <% end %>
 </div>

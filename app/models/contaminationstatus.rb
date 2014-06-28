@@ -8,4 +8,8 @@ class Contaminationstatus < ActiveRecord::Base
 	belongs_to :treatment
 	belongs_to :spiking
 	belongs_to :result
+
+	accepts_nested_attributes_for :agent, 
+                                :reject_if => :all_blank
+       
 end

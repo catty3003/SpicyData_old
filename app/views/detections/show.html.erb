@@ -11,7 +11,6 @@
 
       <div class="col-md-3" id="leftCol">
         <div class="well">    
-          <h3>Single</h3>   
           <%= render 'layouts/sidebar_show' %>
         </div>
       </div>     
@@ -149,8 +148,9 @@
 
             </div>
           </div>    
-          <%= link_to 'Edit', edit_detection_path(@detection) %> |
-          <%= link_to 'Back', detections_path %>   
+          <%= link_to 'Edit Detection', edit_detection_path(@detection), class: "btn btn-warning btn-sm" %> |  | 
+          <%= link_to 'Delete', @detection, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> | 
+          <%= link_to 'Back to all Detections', detections_path, class: "btn btn-info btn-sm" %>   
         </div>
       </div>
 

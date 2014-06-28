@@ -112,7 +112,8 @@
     </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save Samplepreparation', class: "btn btn-success" %> | | 
+    <%= link_to 'Cancel', samplepreparations_path, class: "btn btn-danger" %>
   </div>
   <% end %>
 </div>

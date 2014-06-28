@@ -103,6 +103,14 @@
         <%= f.label :reference_id %><br>
         <%= f.number_field :reference_id %>
       </div>
+
+
+      <div class="form-group has-success">
+        <label class="control-label" for="inputSuccess"><%= f.label :reference %></label>          
+        <%= f.select :reference_id, Reference.all.collect {|c| [ [c.first_author_name, c.year, c.title], c.id ] }, { :include_blank => true, :selected => @matrix.reference_id}, class: "form-control" %>
+      </div>
+
+
       <div class="field">
         <%= f.label :user_id %><br>
         <%= f.number_field :user_id %>
@@ -111,7 +119,8 @@
     </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Save Matrix', class: "btn btn-success" %> | | 
+    <%= link_to 'Cancel', matrices_path, class: "btn btn-danger" %>
   </div>
   <% end %>
 </div>

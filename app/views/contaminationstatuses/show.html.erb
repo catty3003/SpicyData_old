@@ -11,7 +11,6 @@
 
       <div class="col-md-3" id="leftCol">
         <div class="well">    
-          <h3>Single</h3>   
           <%= render 'layouts/sidebar_show' %>
         </div>
       </div>     
@@ -85,8 +84,8 @@
             </div>
           </div>    
               <%= link_to 'Edit', edit_contaminationstatus_path(@contaminationstatus), class: "btn btn-warning btn-sm" %> |  | 
-              <%= link_to 'Destroy', @contaminationstatus, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> | 
-              <%= link_to 'Back to Contaminationstatus', contaminationstatuses_path, class: "btn btn-info btn-sm" %> 
+              <%= link_to 'Delete', @contaminationstatus, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> | 
+              <%= link_to 'Back to all Contamination Status', contaminationstatuses_path, class: "btn btn-info btn-sm" %> 
         </div>
       </div>
 

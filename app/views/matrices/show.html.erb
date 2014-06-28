@@ -11,7 +11,6 @@
 
       <div class="col-md-3" id="leftCol">
         <div class="well">    
-          <h3>Single</h3>   
           <%= render 'layouts/sidebar_show' %>
         </div>
       </div>     
@@ -139,8 +138,9 @@
 
             </div>
           </div>    
-          <%= link_to 'Edit', edit_matrix_path(@matrix) %> |
-          <%= link_to 'Back', matrices_path %>  
+          <%= link_to 'Edit Matrix', edit_matrix_path(@matrix), class: "btn btn-warning btn-sm" %> |  | 
+          <%= link_to 'Delete', @matrix, class: "btn btn-danger btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %> | 
+          <%= link_to 'Back to all Matrices', matrices_path, class: "btn btn-info btn-sm" %>
         </div>
       </div>
 

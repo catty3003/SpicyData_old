@@ -54,9 +54,8 @@
             <td><%= treatment.reference_id %></td>
             <td><%= treatment.user_id %></td>
             <td><%= treatment.matrix_id %></td>
-            <td><%= link_to 'Show', treatment %></td>
-            <td><%= link_to 'Edit', edit_treatment_path(treatment) %></td>
-            <td><%= link_to 'Destroy', treatment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Show', treatment, class: "btn btn-info btn-sm" %></td>
+            <td><%= link_to 'Edit', edit_treatment_path(treatment), class: "btn btn-warning btn-sm" %></td>
           </tr>
         <% end %>
       </tbody>
@@ -64,5 +63,5 @@
 
     <br>
 
-    <%= link_to 'New Treatment', new_treatment_path %>
+    <%= link_to 'New Treatment', new_treatment_path, class: "btn btn-success btn-sm"  %>
 </div>
